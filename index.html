@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Welcome screen -->
+        <div id="welcome-screen">
+            <h1>SPACE INVADERS</h1>
+            <div class="high-score">HIGH SCORE: <span id="high-score">0</span></div>
+            <div class="instructions">
+                <p>Use LEFT and RIGHT arrows to move</p>
+                <p>SPACE to shoot</p>
+                <p>P to pause</p>
+            </div>
+            <button id="start-button">START GAME</button>
+        </div>
+        
+        <!-- Game UI -->
+        <div id="game-ui">
+            <div class="top-bar">
+                <div class="score-container">SCORE: <span id="score">0</span></div>
+                <div class="level-container">LEVEL: <span id="level">1</span></div>
+                <div class="lives-container">LIVES: <span id="lives">3</span></div>
+            </div>
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+            <div class="controls-info">
+                <p>Use LEFT and RIGHT arrows to move, SPACE to shoot, P to pause</p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/sprites.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
